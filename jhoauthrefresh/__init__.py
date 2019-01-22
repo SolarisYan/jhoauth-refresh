@@ -24,7 +24,8 @@ def setup_handlers(web_app):
 
 
 async def fetch_new_token(token,
-                          url='https://notebooks.openhumans.org/services/refresher/tokens'):
+                          url='http://refresher/services/refresher/tokens'):
+                          # url='https://notebooks.openhumans.org/services/refresher/tokens'):
     req = HTTPRequest(url, headers={"Authorization": "token %s" % token})
 
     client = AsyncHTTPClient()
