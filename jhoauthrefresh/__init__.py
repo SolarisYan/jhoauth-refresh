@@ -24,7 +24,7 @@ def setup_handlers(web_app):
 
 
 async def fetch_new_token(token,
-                          url=os.getenv('REFRESHER_URL')
+                          url=os.getenv('REFRESHER_URL', 'http://10.209.156.243:30767/services/refresher/tokens')
                          ):
                           # url='http://refresher/services/refresher/tokens'):
                           # url='https://notebooks.openhumans.org/services/refresher/tokens'):
